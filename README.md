@@ -1,7 +1,10 @@
-# gist-it-octane  [![Build Status](https://travis-ci.org/happyvig/ember-octane-gist-it.svg?branch=master)](https://travis-ci.org/happyvig/ember-octane-gist-it)
+# gist-it-octane  
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+[![Build Status](https://travis-ci.org/happyvig/ember-octane-gist-it.svg?branch=master)](https://travis-ci.org/happyvig/ember-octane-gist-it)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  
+[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40KVignsh)](https://twitter.com/KVignsh)
+
+A browser based personal gist/ code snippet manager, built with latest Ember Octane, with support for dark mode and offline access.
 
 ## Prerequisites
 
@@ -46,7 +49,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+Deployment happens automatically on every PR merge.
 
 ## Further Reading / Useful Links
 
