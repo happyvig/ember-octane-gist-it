@@ -1,8 +1,10 @@
 # gist-it-octane  
 
-![![Build Status](https://travis-ci.org/happyvig/ember-octane-gist-it.svg?branch=master)](https://travis-ci.org/happyvig/ember-octane-gist-it)
-![![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-![![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40KVignsh)](https://twitter.com/KVignsh)
+[![Build Status](https://travis-ci.org/happyvig/ember-octane-gist-it.svg?branch=master)](https://travis-ci.org/happyvig/ember-octane-gist-it)
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40KVignsh)](https://twitter.com/KVignsh)
 
 A browser based personal gist/ code snippet manager, built with latest Ember Octane, with support for dark mode and offline access.
 
