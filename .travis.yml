@@ -29,5 +29,10 @@ script:
   - npm run lint:js
   - npm test
   - npm run prepare-deploy
-  - surge dist https://local-gists.surge.sh
-  - surge dist https://gists.surge.sh
+
+deploy:
+  on: master
+  provider: surge
+  project: ./dist/
+  domain: https://local-gists.surge.sh
+  skip_cleanup: true

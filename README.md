@@ -8,6 +8,8 @@
 
 A browser based personal gist/ code snippet manager, built with latest Ember Octane, with support for dark mode and offline access.
 
+[Production version](https://gists.surge.sh/)
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
