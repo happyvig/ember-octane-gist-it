@@ -9,41 +9,28 @@ $primary-color: #333;
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
 :root {
   --background: #fff;
   --foreground: #000;
-
-  --dark-background: #222;
-  --dark-foreground: #fff
+  --border: #df4d36;
+  --highlight: #000;
 }
 
 body {
   transition: all 1s ease-in-out;
   background: var(--background);
   color: var(--foreground);
-  &.dark-mode {
-    background: var(--dark-background);
-    color: var(--dark-foreground);
-    a { color: var(--dark-foreground); }
-    .header {
-      background: var(--dark-foreground);
-      color: var(--dark-background);
-      .right-header {
-        a {
-          border-color: var(--dark-background);
-        }
-      }
-    }
-    .mini-button {
-      background: var(--dark-background);
-      color: var(--dark-foreground);
-      border-color: var(--dark-foreground);
-    }
-  }
+}
+
+body.dark-mode {
+  --background: #222;
+  --foreground: #fff;
+  --border: #df4d36ab;
+  --highlight: #df4d36;
+}
+
+a {
+  text-decoration: none;
 }
 
 // TOGGLE BUTTON
@@ -242,6 +229,9 @@ body {
     display: flex;
     span { padding-top: 5px; }
   }
+  span, a {
+    color: var(--highlight);
+  }
   img {
     height: 24px;
     background: #273247;
@@ -409,6 +399,12 @@ body {
   small {
     width: 92%;
     display: inline-block;
+  }
+  .file-block {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 2px dashed var(--border);
+    border-radius: 5px;
   }
   .code-box {
     border: 1px solid rgba(27, 31, 35, 0.2);
