@@ -12,7 +12,7 @@ module('Integration | Component | header', function(hooks) {
 
     await render(hbs`<Header />`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.equal(this.element.textContent.trim().length > 0, true);
 
     // Template block usage:
     await render(hbs`
@@ -21,6 +21,6 @@ module('Integration | Component | header', function(hooks) {
       </Header>
     `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.equal(this.element.textContent.trim().indexOf('template block text') > -1, true);
   });
 });

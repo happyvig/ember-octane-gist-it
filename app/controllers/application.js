@@ -4,7 +4,7 @@ export default class ApplicationController extends Controller {
 
   constructor() {
     super(...arguments);
-    log("Application controller - loaded");
+    window.log("Application controller - loaded");
   }
 
 

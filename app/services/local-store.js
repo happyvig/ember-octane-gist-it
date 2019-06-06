@@ -5,7 +5,7 @@ export default class LocalStoreService extends Service {
   constructor() {
     super(...arguments);
     this.store = window.localStorage;
-    log("LocalStore service - loaded");
+    window.log("LocalStore service - loaded");
   }
 
   save(data, key='gists'){

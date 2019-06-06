@@ -10,7 +10,7 @@ export default class AddGistController extends Controller {
 
   constructor() {
     super(...arguments);
-    log("AddGist controller - loaded");
+    window.msContentScriptlog("AddGist controller - loaded");
   }
 
   @action addFile(body, description, fileName) {

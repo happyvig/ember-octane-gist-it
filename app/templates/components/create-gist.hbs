@@ -1,3 +1,4 @@
+{{yield}}
 <div class="gist-wrapper">
   <h2>Create your Gist</h2>
   <div class="gist-description">
@@ -19,7 +20,6 @@
 
       {{code-editor language="javascript" code="" theme="light"
                     onChange=(action (mut this.body))
-                    onReady=(action editorReady)
       }}
 
     </div>

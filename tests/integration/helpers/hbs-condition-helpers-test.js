@@ -10,8 +10,8 @@ module('Integration | Helper | hbs-helpers', function(hooks) {
   test('it renders', async function(assert) {
     this.set('inputValue', '1234');
 
-    await render(hbs`{{hbs-condition-helper inputValue}}`);
+    await render(hbs`{{hbs-condition-helper inputValue '==' '1234'}}`);
 
-    assert.equal(this.element.textContent.trim(), '1234');
+    assert.equal(this.element.textContent.trim(), 'true');
   });
 });

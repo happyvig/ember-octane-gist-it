@@ -9,7 +9,7 @@ export default class GistsInfoService extends Service {
 
   constructor() {
     super(...arguments);
-    log("GistsInfo service - loaded");
+    window.log("GistsInfo service - loaded");
   }
 
   get numberOfGists() {

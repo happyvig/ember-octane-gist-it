@@ -1,7 +1,7 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
-var isDevMode = (EmberApp.env() !== "production");
+var isDevMode = (EmberApp.env() !== "production") && (EmberApp.env() !== "test");
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {

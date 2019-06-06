@@ -19,7 +19,7 @@ export default class HeaderComponent extends Component {
       this.isDarkModeOn = window.matchMedia('(prefers-color-scheme: dark)').matches;
     }
 
-    log(`Header component - loaded`);
+    window.log(`Header component - loaded`);
   }
 
   get title() { return this.args.title || "Gist it!"; }

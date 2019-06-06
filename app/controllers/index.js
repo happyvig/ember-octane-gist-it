@@ -11,7 +11,7 @@ export default class IndexController extends Controller {
 
   constructor() {
     super(...arguments);
-    log("Index controller - loaded")
+    window.log("Index controller - loaded")
   }
 
   @action initer() {
