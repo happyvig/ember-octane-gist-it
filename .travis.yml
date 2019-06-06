@@ -28,3 +28,6 @@ script:
   - npm run lint:hbs
   - npm run lint:js
   - npm test
+  - npm run prepare-deploy
+  - surge dist https://local-gists.surge.sh
+  - surge dist https://gists.surge.sh

@@ -15,6 +15,7 @@ module.exports = function(defaults) {
 
     'esw-cache-first': { // RegExp patterns specifying which URLs to cache.
       patterns: [
+        '/images/(.+)',
         'https://fonts.googleapis.com/css(.+)',
         'https://fonts.gstatic.com/s/',
         '/ember-monaco/frame.html',

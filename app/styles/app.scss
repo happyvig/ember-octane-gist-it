@@ -9,41 +9,30 @@ $primary-color: #333;
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
 :root {
   --background: #fff;
   --foreground: #000;
-
-  --dark-background: #222;
-  --dark-foreground: #fff
+  --border: #df4d36;
+  --highlight: #000;
+  --sample-code-image-url: url("/images/sample-code-light.png")
 }
 
 body {
   transition: all 1s ease-in-out;
   background: var(--background);
   color: var(--foreground);
-  &.dark-mode {
-    background: var(--dark-background);
-    color: var(--dark-foreground);
-    a { color: var(--dark-foreground); }
-    .header {
-      background: var(--dark-foreground);
-      color: var(--dark-background);
-      .right-header {
-        a {
-          border-color: var(--dark-background);
-        }
-      }
-    }
-    .mini-button {
-      background: var(--dark-background);
-      color: var(--dark-foreground);
-      border-color: var(--dark-foreground);
-    }
-  }
+}
+
+body.dark-mode {
+  --background: #222;
+  --foreground: #fff;
+  --border: #df4d36ab;
+  --highlight: #df4d36;
+  --sample-code-image-url: url("/images/sample-code-dark.png");
+}
+
+a {
+  text-decoration: none;
 }
 
 // TOGGLE BUTTON
@@ -242,6 +231,9 @@ body {
     display: flex;
     span { padding-top: 5px; }
   }
+  span, a {
+    color: var(--highlight);
+  }
   img {
     height: 24px;
     background: #273247;
@@ -402,13 +394,30 @@ body {
   flex-direction: column;
   min-height: calc(100vh - 130px);
   .is-empty {
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    .code-placeholder {
+      margin-top: 20px;
+      transition: all 1s ease-in-out;
+      background-image: var(--sample-code-image-url);
+      background-size: 100% 100%;
+      background-position: initial;
+      width: 850px;
+      height: 345px;
+    }
   }
   small {
     width: 92%;
     display: inline-block;
+  }
+  .file-block {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 2px dashed var(--border);
+    border-radius: 5px;
   }
   .code-box {
     border: 1px solid rgba(27, 31, 35, 0.2);
