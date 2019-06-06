@@ -1,0 +1,38 @@
+
+{{! Component with modifiers }}
+
+<div class="app-quote">
+  {{#unless this.welcomeMessageSeen}}
+    All your snippets stay safe in your browser.<br />
+    Always. <br />
+    Not even the incognito mode can view them.
+    <button class="mini-button" {{action this.toggleWelcomeMessage}}>X</button>
+  {{else}}
+    <button class="mini-button" {{action this.toggleWelcomeMessage}}>Privacy policy</button>
+  {{/unless}}
+</div>
+
+
+<div class="main-code-box" {{did-insert (action this.initer)}}>
+  {{#if this.gistsInfo.gists}}
+    <h3>Your gists</h3>
+  {{/if}}
+  {{#each this.gistsInfo.gists as |gist|}}
+    <div class="file-block">
+      <div class="file-header">
+        <h2>{{gist.description}}</h2>
+        <small>{{gist.fileName}}</small>
+        <button onclick={{action "removeFile" gist.fileName}} class="gist-button" id="delete-gist">Delete</button>
+      </div>
+      <div class="code-box">
+        <CodeBlock @language={{hbs-condition-helper gist.language "||" "js"}}>
+          {{gist.body}}
+        </CodeBlock>
+      </div>
+    </div>
+  {{else}}
+    <div class="is-empty">
+      <h2>No Gists! Please add one!</h2>
+    </div>
+  {{/each}}
+</div>

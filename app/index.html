@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gist it !</title>
+    <meta name="description" content="Gist it! - Your Personal snipper manager">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=auto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=auto" rel="stylesheet">
+    <link rel="shortcut icon" href="{{rootURL}}images/gist_it.png">
+
+    {{content-for "head"}}
+
+    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/gist-it-octane.css">
+
+    {{content-for "head-footer"}}
+  </head>
+  <body>
+    {{content-for "body"}}
+
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/gist-it-octane.js"></script>
+
+    {{content-for "body-footer"}}
+  </body>
+</html>
