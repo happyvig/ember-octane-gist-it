@@ -21,6 +21,9 @@ env:
 before_install:
   - npm config set spin false
 
+install:
+  - npm install -g surge
+
 script:
   - npm run lint:hbs
   - npm run lint:js
