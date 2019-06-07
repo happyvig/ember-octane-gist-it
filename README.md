@@ -1,4 +1,4 @@
-# gist-it-octane  
+# ember-octane-gist-it 
 
 [![Build Status](https://travis-ci.org/happyvig/ember-octane-gist-it.svg?branch=master)](https://travis-ci.org/happyvig/ember-octane-gist-it)
 
@@ -6,9 +6,27 @@
 
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40KVignsh)](https://twitter.com/KVignsh)
 
-A browser based personal gist/ code snippet manager, built with latest Ember Octane, with support for dark mode and offline access.
+A browser based personal gist/ code snippet manager, built with latest Ember Octane, with integrated Visual Studio Code for code editing, support for dark mode and offline capability.
 
-[Production version](https://gists.surge.sh/)
+Check out the app : [https://gists.surge.sh/](https://gists.surge.sh/)
+
+## Features
+* Ember Octane conventions
+* VS Code integrated code editor
+* Runs on LocalStorage
+* Auto / Dark Mode 
+* Auto mode - Set mode based on the OS setting (Ex: Dark Mode in macOS Mojave )
+* Offline support
+
+## Themes
+* Default / Auto
+
+![Light Theme](https://i.ibb.co/mRqNcvN/gist-it-home-light.png)
+
+
+* Dark Theme
+
+![Dark Theme](https://i.ibb.co/DrG4ysk/gist-it-home-dark.png)
 
 ## Prerequisites
 
@@ -53,7 +71,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Deployment happens automatically on every PR merge.
+Travis CI Integration  takes care of automatic deployment on every PR merge to master. 
 
 ## Further Reading / Useful Links
 
