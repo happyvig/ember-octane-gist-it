@@ -28,9 +28,5 @@ script:
   - npm test
   - npm run prepare-deploy
 
-deploy:
-  on: master
-  provider: surge
-
 after_success:
   - surge --project ./dist --domain https://local-gists.surge.sh
