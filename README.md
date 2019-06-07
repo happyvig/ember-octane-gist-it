@@ -1,10 +1,8 @@
 # ember-octane-gist-it 
 
-[![Build Status](https://travis-ci.org/happyvig/ember-octane-gist-it.svg?branch=master)](https://travis-ci.org/happyvig/ember-octane-gist-it) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Build Status](https://travis-ci.org/happyvig/ember-octane-gist-it.svg?branch=master)](https://travis-ci.org/happyvig/ember-octane-gist-it) [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/VigLabs-Inc/ember-octane-gist-it) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/happyvig/ember-octane-gist-it/graphs/commit-activity)
-
-[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://gists.surge.sh/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/happyvig/ember-octane-gist-it/graphs/commit-activity) [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://gists.surge.sh/)
 
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40KVignsh)](https://twitter.com/KVignsh)
 
