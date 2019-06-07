@@ -31,5 +31,6 @@ script:
 deploy:
   on: master
   provider: surge
-  project: ./dist/
-  domain: https://local-gists.surge.sh
+
+after_success:
+  - surge --project ./dist --domain https://local-gists.surge.sh
