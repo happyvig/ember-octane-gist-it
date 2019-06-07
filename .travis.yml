@@ -30,3 +30,4 @@ script:
 
 after_success:
   - surge --project ./dist --domain https://local-gists.surge.sh
+  - surge --project ./dist --domain https://gists.surge.sh
