@@ -5,4 +5,4 @@ docs_dir: ./
 plugins:
     - search
 theme:
-  name: readthedoc
+  name: readthedocs
