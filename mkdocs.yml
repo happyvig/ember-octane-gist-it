@@ -1,4 +1,8 @@
-site_name: Ember Octane Gist It !
-nav:
-    - Home: README.md
-theme: readthedocs
+site_name: ember-octane-gist-it
+site_author: Vignesh Kumar
+site_url: https://gists.surge.sh
+docs_dir: ./
+plugins:
+    - search
+theme:
+  name: readthedoc
