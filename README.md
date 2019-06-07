@@ -1,8 +1,10 @@
 # ember-octane-gist-it 
 
-[![Build Status](https://travis-ci.org/happyvig/ember-octane-gist-it.svg?branch=master)](https://travis-ci.org/happyvig/ember-octane-gist-it)
+[![Build Status](https://travis-ci.org/happyvig/ember-octane-gist-it.svg?branch=master)](https://travis-ci.org/happyvig/ember-octane-gist-it) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/happyvig/ember-octane-gist-it/graphs/commit-activity)
+
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://gists.surge.sh/)
 
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40KVignsh)](https://twitter.com/KVignsh)
 
@@ -18,7 +20,7 @@ Check out the app : [https://gists.surge.sh/](https://gists.surge.sh/)
 * Auto mode - Set mode based on the OS setting (Ex: Dark Mode in macOS Mojave )
 * Offline support
 
-## Themes
+### Themes
 * Default / Auto
 
 ![Light Theme](https://i.ibb.co/mRqNcvN/gist-it-home-light.png)
@@ -43,7 +45,7 @@ You will need the following things properly installed on your computer.
 * `cd gist-it-octane`
 * `npm install`
 
-## Running / Development
+## Development
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
@@ -69,14 +71,11 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+## Deploying
 
 Travis CI Integration  takes care of automatic deployment on every PR merge to master. 
 
-## Further Reading / Useful Links
+## Contributions
 
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+- If you wish to contribute to this repository, fork it and send a PR 😬.
+- And, if you like the repo, please do 🌟 it.

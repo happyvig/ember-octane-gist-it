@@ -1,0 +1,4 @@
+site_name: Ember Octane Gist It !
+nav:
+    - Home: README.md
+theme: readthedocs
