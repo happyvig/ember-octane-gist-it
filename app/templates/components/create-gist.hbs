@@ -2,14 +2,14 @@
 <div class="gist-wrapper">
   <h2>Create your Gist</h2>
   <div class="gist-description">
-    <input value={{this.description}}
+    <input value={{this.description}} id="description"
            onchange={{action (mut this.description) value="target.value"}}
            type="text"
            placeholder="Gist description">
   </div>
   <div class="gist-box">
     <div class="file-header">
-      <input value={{this.fileName}}
+      <input value={{this.fileName}} id="filename"
              onchange={{action (mut this.fileName) value="target.value"}}
              type="text"
              placeholder="Filename with extension">
@@ -18,13 +18,13 @@
       {{!-- <textarea name="main-text-gist" id="" cols="30" rows="10" value={{this.body}}
                 onchange={{action (mut this.body) value="target.value"}}></textarea> --}}
 
-      {{code-editor language="javascript" code="" theme="light"
+      {{code-editor language="javascript" code="" theme="light" id="code-editor"
                     onChange=(action (mut this.body))
       }}
 
     </div>
     <div class="gist-button-wrapper">
-      <button onclick={{action @addFile this.body this.description this.fileName}} class="gist-button">
+      <button onclick={{action @addFile this.body this.description this.fileName}} class="gist-button add-gist">
         Add Gist
       </button>
     </div>
