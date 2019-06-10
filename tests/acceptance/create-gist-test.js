@@ -27,7 +27,7 @@ module('Acceptance | Create gist page', function (hooks) {
     // find('#filename').value = "DUMMY";
     // find('#code-editor').innerText = "DUMMY";
 
-    this.set("description", "vignesh");
+    this.set("description", "test");
 
     await percySnapshot('Add gist page', { breakpoints: ['desktop'] });
 
