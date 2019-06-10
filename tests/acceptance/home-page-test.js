@@ -6,13 +6,22 @@ import { percySnapshot } from 'ember-percy';
 module('Acceptance | home page', function(hooks) {
   setupApplicationTest(hooks);
 
-  test('visiting /', async function(assert) {
-    await visit('/');
-    percySnapshot('home page', { breakpoints: ['desktop'] });
+  hooks.beforeEach(function () {
+    // Make sure we clear the local storage for each run
+    window.localStorage.clear();
+  });
 
-    click('#mode-toggle');
-    percySnapshot('home page (dark mode toggled)', { breakpoints: ['desktop'] });
+  test('visiting /', async function(assert) {
+
+    await visit('/');
+
+    await percySnapshot('Home page', { breakpoints: ['desktop'] });
+
+    await click('#mode-toggle');
+
+    await percySnapshot('Home page - dark mode on', { breakpoints: ['desktop'] });
 
     assert.equal(currentURL(), '/');
+
   });
 });
