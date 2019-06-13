@@ -1,8 +1,8 @@
 import { module, test } from 'qunit';
-import { percySnapshot } from 'ember-percy';
+// import { percySnapshot } from 'ember-percy';
 import { setupApplicationTest } from 'ember-qunit';
-import { visit, click, currentURL, find } from '@ember/test-helpers';
-import Controller from '@ember/controller';
+import { visit, currentURL } from '@ember/test-helpers';
+// import Controller from '@ember/controller';
 
 module('Acceptance | Create gist page', function (hooks) {
 
@@ -19,7 +19,7 @@ module('Acceptance | Create gist page', function (hooks) {
     // this.owner.application.inject('controller:add-gist', 'add-gist', controller);
   });
 
-  test('visiting /add-gist', async function(assert) {
+  test('visiting /add-gist', async function(assert) { // function(assert) {}
 
     await visit('/add-gist');
 
@@ -27,15 +27,15 @@ module('Acceptance | Create gist page', function (hooks) {
     // find('#filename').value = "DUMMY";
     // find('#code-editor').innerText = "DUMMY";
 
-    this.set("description", "test");
+    // this.set("description", "test");
 
-    await percySnapshot('Add gist page', { breakpoints: ['desktop'] });
+    // await percySnapshot('Add gist page', { breakpoints: ['desktop'] });
 
-    await click('.add-gist');
+    // await click('.add-gist');
 
-    percySnapshot('On gist added', { breakpoints: ['desktop'] });
+    // await percySnapshot('On gist added', { breakpoints: ['desktop'] });
 
-    console.log(currentURL());
+    // console.log(currentURL());
 
     // Page navigates to home after adding
     assert.equal(currentURL(), '/add-gist');
