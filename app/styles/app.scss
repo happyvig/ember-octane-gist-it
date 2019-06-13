@@ -14,7 +14,8 @@ $primary-color: #333;
   --foreground: #000;
   --border: #df4d36;
   --highlight: #000;
-  --sample-code-image-url: url("/images/sample-code-light.png")
+  --sample-code-image-url: url("/images/sample-code-light.png");
+  --header-gradient: linear-gradient(45deg, #549eff, #8563ff 80%,#8563ff 0,#8563ff 0, #9154ff);
 }
 
 body {
@@ -29,6 +30,7 @@ body.dark-mode {
   --border: #df4d36ab;
   --highlight: #df4d36;
   --sample-code-image-url: url("/images/sample-code-dark.png");
+  --header-gradient: linear-gradient(45deg, #9154ff, #8563ff 0, #8563ff 0, #8563ff 80%, #549eff);
 }
 
 a {
@@ -178,7 +180,7 @@ a {
   transition: all 1s ease-in-out;
   display: flex;
   justify-content: space-around;
-  background-color: var(--foreground);
+  background: var(--header-gradient);
   color: var(--background);
   padding-bottom: 12px;
   padding-top: 12px;
